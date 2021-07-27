@@ -10,8 +10,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#04c35c">
 </head>
 <body>
-    
+    <main id="main">
+        <div id="main__image">
+            <img src="assets/images/image.svg" alt="Main Image">
+        </div>
+        <div id="main__login">
+            <div id="login">
+                <p>Bem vindo de volta</p>
+                <h1>Faça login na sua conta</h1>
+                <form>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <div id="login__options">
+                        <div id="login__options_remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Lembrar de min</label>
+                        </div>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                </form>
+                <button id="entrar">Entrar</button>
+                <button id="google">
+                    <img src="assets/icons/google.svg" alt="Google Icon">
+                    <p>Ou faça login com o Google</p>
+                </button>
+            </div>
+            <div id="signup">
+                <p>Não tem uma conta?</p>
+                <a href="#">Cadastre-se</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

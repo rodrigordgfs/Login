@@ -2,8 +2,174 @@
 @import "reset";
 
 $green: #04c35c;
+$green-hover: #09a753;
 $blue: #2b6cb0;
 $white: #ffffff;
 $white300: #f7fafc;
 $dark: #1a202c;
+$dark-hover: #303133;
 $input: #e8e8e8;
+
+$merriweather: 'Merriweather', sans-serif;
+$lato: 'Lato', sans-serif;
+
+#main {
+    display: flex;
+    flex-direction: row; 
+    #main__image {
+        flex: 1;
+        background: $white300;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        img {
+            width: 400px;
+        }
+    }
+    #main__login {
+        flex: 1;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        #login {
+            display: flex;
+            flex-direction: column;
+            p {
+                font-family: $merriweather;
+                font-weight: 400;
+                font-size: 1rem;
+                color: $dark;
+            }
+            h1 {
+                font-family: $merriweather;
+                font-weight: 700;
+                font-size: 1.625rem;
+                color: $dark;
+                margin: 10px 0 30px 0;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                label {
+                    font-family: $lato;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: $dark;
+                }
+                input {
+                    background: transparent;
+                    border: 1px solid $input;
+                    border-radius: 5px;
+                    padding: 15px 20px;
+                    font-family: $lato;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    color: $dark;
+                    outline: none;
+                }
+                #login__options {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 15px 0 25px 0;
+                    #login__options_remember {
+                        input {
+                            vertical-align: middle;
+                        }
+                        input:checked {
+                            background: $green;
+                        }
+                        label {
+                            font-family: $lato;
+                            font-weight: 400;
+                            font-size: 0.875rem;
+                            color: $dark;
+                        }
+                    }
+                    a {
+                        font-family: $lato;
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                        color: $blue;
+                    }
+                }
+            }
+            #entrar {
+                font-family: $lato;
+                font-weight: 700;
+                font-size: 1rem;
+                color: $white;
+                background: $green;
+                border: none;
+                border-radius: 5px;
+                padding: 15px 0;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+                margin-bottom: 15px;
+                &:hover {
+                    background: $green-hover;
+                }
+            }
+            #google {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                border: none;
+                border-radius: 5px;
+                padding: 15px 0;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+                background: $dark;
+                &:hover {
+                    background: $dark-hover;
+                }
+                img {
+                    height: 24px;
+                }
+                p {
+                    font-family: $lato;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    color: $white;
+                }
+            }
+        }
+        #signup {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            font-family: $lato;
+            font-weight: 400;
+            font-size: 1rem;
+            p {
+                color: $dark;
+            }
+            a {
+                color: $blue;
+            }
+        }
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+    #main {
+        #main__image {
+            display: none;
+        }
+    }
+}
